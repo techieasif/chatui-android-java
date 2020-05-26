@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".ui.chat.ChatFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_constraintLayout_id"
+        android:layout_width="363dp"
+        android:layout_height="521dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/chat_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <FrameLayout
+            android:id="@+id/chat_Box_id"
+            android:layout_width="241dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="487dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/user_chat_image"
+                android:layout_width="44dp"
+                android:layout_height="38dp"
+                android:contentDescription="@string/user_image"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/sohie_cht_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:paddingTop="8dp"
+                android:text="Sophie"
+                android:textSize="8sp"
+
+                />
+
+            <TextView
+                android:id="@+id/msg_rcvd_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/chat_green"
+                android:padding="16dp"
+                android:text="@string/hello_mobiloitte"
+                android:textColor="#ffffff"
+
+                android:textSize="12sp" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/chat_blue"
+            android:padding="16dp"
+            android:text="@string/hello_sent"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/chat_Box_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/add_cmt_bg_id"
+        android:layout_width="371dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/send_msg_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_constraintLayout_id"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_add_cmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autofillHints="@string/add_a_comment"
+                android:background="@drawable/user_input_bg"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+
+                android:textColor="#DAE0E2"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/send_btn_bg"
+                android:contentDescription=""
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_send"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,35 @@
 <resources>
     <string name="app_name">chatui</string>
-    <string name="chat">Chat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mobiloitte</string>
+    <string name="nav_header_subtitle">hr@mobiloitte.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">Home</string>
+    <string name="chats">Chat</string>
+    <string name="event">Events</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="user_name">Jasmin</string>
+    <string name="user_desc">User</string>
+    <string name="user_latest_chat_msg">Hey..!! am from Delhi, working Android Dev.</string>
+    <string name="btn_chat_txt">accept</string>
+    <string name="suggestions_for_you">Suggestions For You</string>
+    <string name="see_all">See All</string>
+    <string name="sug_user_name">Sophie</string>
+    <string name="sug_user_desc">Suggestion User</string>
+    <string name="sug_user_latest_chat_msg">Hey..!!I am from Bengaluru, working as Flutter Dev.</string>
+    <string name="connect">Connect</string>
+    <string name="user_image">user image</string>
+    <string name="add_a_comment">Add a comment ..</string>
+    <string name="save">SAVE</string>
+    <string name="event_name">Event Name</string>
+    <string name="music_event">Music Event</string>
+    <string name="event_type">Event Type</string>
+    <string name="public_txt">Public</string>
+    <string name="private_txt">Private</string>
+    <string name="hello_mobiloitte">Hello Mobiloitte</string>
+    <string name="hello_sent">Hello</string>
 </resources>

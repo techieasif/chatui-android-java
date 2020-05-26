@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <FrameLayout
+        android:id="@+id/user_chat_card_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/user_chat_box_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/see_txt_id"
+        app:layout_constraintCircleRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="68dp"
+            android:layout_height="56dp"
+            android:contentDescription="@string/user_desc"
+            android:paddingTop="10dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="75dp"
+            android:paddingLeft="75dp"
+            android:paddingTop="10dp"
+            android:text="@string/user_name"
+            android:textColor="#F8F3F3"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/user_msg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="75dp"
+            android:paddingTop="30dp"
+            android:text="@string/user_latest_chat_msg"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            tools:ignore="RtlSymmetry,SmallSp" />
+
+        <Button
+            android:id="@+id/btn_chat_Accept_id"
+            android:layout_width="37dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_background"
+            android:text="@string/btn_chat_txt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8sp"
+            android:typeface="sans" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/see_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="11dp"
+        android:shadowColor="#686464"
+        android:text="@string/see_all"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/sug_txt_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_chat_card_id"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/sug_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:padding="20dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/suggestions_for_you"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/sug_user_card_id"
+        app:layout_constraintStart_toStartOf="@+id/see_txt_id"
+        app:layout_constraintTop_toBottomOf="@+id/see_txt_id" />
+
+
+    <!--    Suggestion Chat Cards-->
+    <FrameLayout
+        android:id="@+id/sug_user_card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/suggestion_chat_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sug_txt_id">
+
+        <ImageView
+            android:id="@+id/sug_user_image"
+            android:layout_width="68dp"
+            android:layout_height="56dp"
+            android:contentDescription="@string/user_desc"
+            android:paddingTop="10dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/sug_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="75dp"
+            android:paddingLeft="75dp"
+            android:paddingTop="10dp"
+            android:text="@string/sug_user_name"
+            android:textColor="#000000"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/sug_user_msg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="75dp"
+            android:paddingLeft="75dp"
+            android:paddingTop="35dp"
+            android:text="@string/sug_user_latest_chat_msg"
+            android:textColor="#6d0000"
+            android:textSize="10sp"
+            tools:ignore="RtlSymmetry,SmallSp" />
+
+        <Button
+            android:id="@+id/sug_btn_chat_Accept_id"
+            android:layout_width="52dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_stroke"
+            android:text="@string/connect"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8sp"
+            android:typeface="sans"
+            tools:ignore="SmallSp" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
